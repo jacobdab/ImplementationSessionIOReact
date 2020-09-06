@@ -1,0 +1,20 @@
+.Dashboard {
+  //align-self: center;
+  width: 100%;
+  min-height: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #61dafb;
+
+  @media (min-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.placeholder {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: aquamarine;
+  border-radius: 5px;
+  padding: 0 5px;
+}

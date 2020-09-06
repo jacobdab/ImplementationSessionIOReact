@@ -1,0 +1,15 @@
+{
+  "name": "friendlyscore",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "front",
+    "back"
+  ],
+  "dependencies": {
+  },
+  "scripts": {
+    "startFront": "yarn workspace front start",
+    "startBack": "yarn workspace back start"
+  }
+}

@@ -1,0 +1,52 @@
+.transactionContainer {
+  background-color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.transactionItem {
+  display: inline-grid;
+  align-content: center;
+  grid-template-columns: 15fr 15fr 9fr 4fr 5fr;
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+
+  &__content {
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 5px;
+    font-size: 11px;
+    color: #8f8f8f;
+  }
+
+
+  @media (min-width: 768px) {
+    .id {
+      min-width: 200px;
+    }
+
+    .name {
+      min-width: 150px;
+    }
+
+    .email {
+      min-width: 200px;
+    }
+
+    .creditScore {
+      max-width: 50px;
+    }
+  }
+}

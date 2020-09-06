@@ -1,0 +1,40 @@
+.personItem {
+  display: inline-grid;
+  grid-template-columns: 15fr 9fr 15fr 3fr;
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid aliceblue;
+    position: relative;
+    min-height: 70px;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 5px;
+    font-size: 11px;
+    color: #8f8f8f;
+  }
+
+  @media (min-width: 768px) {
+    .id {
+      min-width: 200px;
+    }
+
+    .name {
+      min-width: 150px;
+    }
+
+    .email {
+      min-width: 200px;
+    }
+  }
+}

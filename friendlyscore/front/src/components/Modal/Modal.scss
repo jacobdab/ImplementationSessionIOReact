@@ -1,0 +1,58 @@
+.Modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  border-radius: 5px;
+  height: 100px;
+
+  form {
+    display: grid;
+  }
+}
+
+.fade {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+  height: 30px;
+  margin: 10px 0;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+}
+
+.submitButton {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms
+}
